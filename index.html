@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coin picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Crypto Market Data</h1>
+    <div id="controls">
+        <input type="text" id="searchInput" placeholder="Search By Name or Symbol">
+        <div>
+            <button onclick="sortByMarketCap()">Sort By Mkt Cap</button>
+            <button onclick="sortByChange()">Sort by Percentage</button>
+        </div>
+    </div>
+    <table id="cryptoTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Current Price (USD)</th>
+                <th>Total Volume</th>
+                <th>24h Change (%)</th>
+                <th>Market Cap</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be populated here -->
+        </tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
